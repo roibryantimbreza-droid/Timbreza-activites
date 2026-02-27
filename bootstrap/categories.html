@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Categories - Inventory System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./boostrap/css/bootstrap.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark px-3">
+  <span class="navbar-brand mb-0 h1">Inventory System</span>
+  <a href="login.html" class="btn btn-outline-light btn-sm">Logout</a>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 bg-light vh-100 border-end p-3">
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item mb-2"><a class="nav-link" href="items.html">Items</a></li>
+        <li class="nav-item mb-2"><a class="nav-link active" href="categories.html">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="units.html">Units</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-10 p-4">
+      <h3 class="mb-4">Categories</h3>
+
+      <div class="d-flex mb-3">
+        <input type="text" class="form-control w-50 me-2" placeholder="New Category">
+        <button class="btn btn-primary">Add</button>
+      </div>
+
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <table class="table table-bordered text-center align-middle">
+            <thead class="table-secondary">
+              <tr>
+                <th style="width:15%;">ID</th>
+                <th style="width:55%;">Category Name</th>
+                <th style="width:30%;">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>School Supplies</td>
+                <td>
+                  <button class="btn btn-warning btn-sm">Edit</button>
+                  <button class="btn btn-danger btn-sm">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Office Equipment</td>
+                <td>
+                  <button class="btn btn-warning btn-sm">Edit</button>
+                  <button class="btn btn-danger btn-sm">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
