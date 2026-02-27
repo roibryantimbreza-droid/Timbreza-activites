@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Inventory System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./boostrap/css/bootstrap.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark px-3">
+  <span class="navbar-brand mb-0 h1">Inventory System</span>
+  <a href="login.html" class="btn btn-outline-light btn-sm">Logout</a>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 bg-light vh-100 border-end p-3">
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item mb-2"><a class="nav-link" href="items.html">Items</a></li>
+        <li class="nav-item mb-2"><a class="nav-link" href="categories.html">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="units.html">Units</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-10 p-4">
+      <h3 class="mb-4">Dashboard</h3>
+
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+              <h6 class="card-title">Item Stock</h6>
+              <p class="display-6">100</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+              <h6 class="card-title">Low Qty</h6>
+              <p class="display-6">10</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+              <h6 class="card-title">Empty Stock</h6>
+              <p class="display-6">20</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Recent Activity</h5>
+          <table class="table table-bordered text-center align-middle">
+            <thead class="table-secondary">
+              <tr>
+                <th style="width:15%;">ID</th>
+                <th style="width:55%;">Activity</th>
+                <th style="width:30%;">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Added 100 Ballpens</td>
+                <td>February 25, 2026</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Removed 5 Notebooks</td>
+                <td>February 24, 2026</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Updated Unit for Erasers</td>
+                <td>February 23, 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
